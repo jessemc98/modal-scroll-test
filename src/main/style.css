@@ -1,0 +1,37 @@
+* {
+  border: 1px solid rgba(255,0,0,0.8);
+}
+body, html, main {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+nav, footer {
+  height: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  height: 88px;
+}
+p {
+  height: 100%;
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+}
+iframe {
+  display: inline-block;
+  width: 60%;
+}
+
+@media only screen and (min-width: 750px) {
+  nav {
+    height: 160px;
+  }
+}

@@ -2,10 +2,21 @@
   "name": "scrolltest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "run-p serve:main serve:iframe open",
+    "serve:main": "http-server ./src/main -p 8080",
+    "serve:iframe": "cd ./src/app && npm start",
+    "open": "open http://localhost:8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "intersection-observer": "^0.2.1"
+  },
+  "devDependencies": {
+    "http-server": "0.7.0",
+    "npm-run-all": "^4.0.2"
+  }
 }
